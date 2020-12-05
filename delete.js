@@ -11,7 +11,7 @@ export const main = handler(async (event, context) => {
     },
   };
 
-  await dynamoDb.get(params);
+  await dynamoDb.delete(params);
 
   return { status: true };
 });
